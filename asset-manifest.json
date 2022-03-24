@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/deploy_contactList_ReactReduxTS/static/css/main.02c4cb49.css",
+    "main.js": "/deploy_contactList_ReactReduxTS/static/js/main.3e2fd897.js",
+    "index.html": "/deploy_contactList_ReactReduxTS/index.html",
+    "main.02c4cb49.css.map": "/deploy_contactList_ReactReduxTS/static/css/main.02c4cb49.css.map",
+    "main.3e2fd897.js.map": "/deploy_contactList_ReactReduxTS/static/js/main.3e2fd897.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02c4cb49.css",
+    "static/js/main.3e2fd897.js"
+  ]
+}
