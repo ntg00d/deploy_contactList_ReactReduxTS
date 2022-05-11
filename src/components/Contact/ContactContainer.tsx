@@ -29,7 +29,7 @@ const mapDispatch = () => {
             element: HTMLTextAreaElement | null,
             nextElement: any
         ): void => {
-            nextElement?.style.maxHeight && element && element.hasAttribute('disabled')
+            nextElement?.style.maxHeight && element && element.hasAttribute('readOnly')
             ? (nextElement.style.maxHeight = null)
             : (nextElement.style.maxHeight = nextElement.scrollHeight * 3 + 'px')
         },
@@ -40,9 +40,9 @@ const mapDispatch = () => {
             refs: IRefsContact
         ): void => {
             for (let i = 0; i < Object.keys(refs).length - 1; i++) {
-                element[i].current.hasAttribute('disabled')
-                ? element[i].current.removeAttribute('disabled')
-                : element[i].current.setAttribute('disabled', '')
+                element[i].current.hasAttribute('readOnly')
+                ? element[i].current.removeAttribute('readOnly')
+                : element[i].current.setAttribute('readOnly', '')
             }
             applyBtn?.classList.contains('disabled')
             ? applyBtn.classList.remove('disabled')

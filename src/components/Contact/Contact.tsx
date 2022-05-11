@@ -24,11 +24,11 @@ const Contact: TContact = ({
                 const nextElement = e.currentTarget.nextElementSibling
                 showInfo(name.current, nextElement)
             }} className="profile__contact-title">
-                <textarea ref={name} defaultValue={el.name} disabled/>
+                <textarea ref={name} defaultValue={el.name} readOnly/>
             </div>
 
             <div className="profile__contact-info">
-                <textarea className="profile__contact-textarea" ref={phone} defaultValue={el.phone} disabled/>
+                <textarea className="profile__contact-textarea" ref={phone} defaultValue={el.phone} readOnly/>
                 <button className="profile__contact-btn" onClick={() => {
                     handle()
                 }}>{noteSvg}</button>
